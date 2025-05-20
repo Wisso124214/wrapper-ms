@@ -11,6 +11,7 @@ methods.forEach(method => {
   const request = config_client.methods[method].request;
   const foo = config_client.methods[method].foo;
 
+  // Research if all methods contains the (request, function) parameters 
   client[method](request, (err, res) => {
     if (err) {
       console.error('Error: ', err);
